@@ -11,9 +11,10 @@
     <button id="button3">Fade In</button>
     <button id="button4">Surprise</button>
 
-    <h1 id="snake-h1">Snake</h1>
+    <h1 id="snake-h1" class="snake">Snake</h1>
     <img
       id="snake-pic"
+      class="snake"
       src="https://upload.wikimedia.org/wikipedia/commons/4/40/Chrysopelea_taprobanica.jpg"
       width="400"
     />
@@ -31,17 +32,17 @@
 
       // ======================== Button #2
       $("#button2").click(function () {
-     
+        $(".snake").slideDown(1000);
       });
 
       // ======================== Button #3
       $("#button3").click(function () {
-    
+    $(".snake").fadeIn(1000);
       });
 
        // ======================== Button #3
       $("#button4").click(function () {
-    
+    $(".snake").fadeOut(1000);
       });
 
 
